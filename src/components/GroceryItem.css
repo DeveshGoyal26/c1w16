@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 100px;
+    row-gap: 100px;
+}
+
+.heading {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF007D;
+    border: 1px black solid;
+    height:60px;
+    margin: 5px 10px;
+    border-radius:10px;
+}
+
+
+.container >div {
+    display:flex;
+    flex-direction:column;
+    border: solid 1px rgba(112,112,112,.38);
+    padding: 10px;
+    border-radius: 10px;
+    /* height:400px; */
+    justify-content: space-evenly;
+}
+.container > div > div > img:hover {
+    transform: scale(1.05);
+    /* border : red solid; */
+}
+
+
+.plus-minus {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    height: 50px;
+    background: #008ecc;
+    color: #fff;
+    font-size:30px;
+}
+
+
+
+.Addtocart {
+    background: #008ecc;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    color: #fff;
+    font-family: JioBold;
+    cursor: pointer;
+}
+
+.discount {
+    background-image: url("https://www.jiomart.com/assets/version1649101673/smartweb/images/icons/offer_bg.svg");
+    text-align:left;
+    background-repeat: no-repeat;
+    display: flex;
+    /* align-items: center; */
+    color: white;
+    height:50px;
+}
+
+.discount > span { 
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.price_div {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+
+}
+
+.price_div > p:nth-child(1),.tilte_div > p{
+    font-weight: bold;
+}
+
+
+.price_div > p > span {
+    text-decoration: line-through;
+}
